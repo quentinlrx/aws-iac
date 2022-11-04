@@ -62,7 +62,7 @@ resource "aws_instance" "web" {
     subnet_id       = aws_subnet.public_subnet.id
   
     user_data = <<-EOF
-    #!/bin/bash
+    #!/bin/bash 
     echo "*** Installing apache2"
     sudo apt update -y
     sudo apt install apache2 -y
