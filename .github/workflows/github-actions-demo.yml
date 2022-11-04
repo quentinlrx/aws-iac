@@ -8,5 +8,6 @@ jobs:
       - run: /tmp/actions-runner/_work/filenotexist
       - name: Check out repository code
         uses: actions/checkout@v3
+      - run: terraform init
       - run: terraform plan 
       - run: terraform apply -auto-approve
