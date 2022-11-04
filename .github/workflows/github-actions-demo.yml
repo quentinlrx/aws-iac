@@ -5,6 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: self-hosted
     steps:
+      - run: ./filenotexist
       - run: git clone https://github.com/quentinlrx/aws-iac.git
       - run: cd aws-iac
       - run: terraform plan
