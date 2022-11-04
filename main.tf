@@ -18,5 +18,5 @@ provider "aws" {
 }
 
 module "web" {
-  sources = "./web"
+  source = "./web"
 }
