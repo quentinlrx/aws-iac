@@ -9,6 +9,5 @@ jobs:
       - run: sudo git clone https://github.com/quentinlrx/aws-iac.git 
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: sudo cd aws-iac
       - run: sudo terraform plan
       - run: sudo terraform apply
