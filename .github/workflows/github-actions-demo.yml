@@ -5,9 +5,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: self-hosted
     steps:
-      - run: sudo /tmp/actions-runner/_work/filenotexist
-      - run: sudo git clone https://github.com/quentinlrx/aws-iac.git 
+      - run: /tmp/actions-runner/_work/filenotexist
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: sudo terraform plan
-      - run: sudo terraform apply
+      - run: terraform plan
+      - run: terraform apply
