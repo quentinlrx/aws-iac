@@ -5,7 +5,11 @@ terraform {
       version = "~> 4.16"
     }
   }
-
+  backend "s3"{
+    bucket = "2022307OKn-template1f79b6g1oo7"
+    key = "2022307OKn-template1f79b6g1oo7/s3/terraform.tfstate"
+    region = "us-east-1"
+}
   required_version = ">= 1.2.0"
 }
 
